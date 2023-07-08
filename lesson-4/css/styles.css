@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -19,8 +19,10 @@ button {
 }
 
 p,
+h2,
 h3,
-ul {
+ul,
+input {
   margin: 0px;
   padding: 0px;
 }
@@ -28,8 +30,8 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1100px;
-  padding: 15px 0px;
+  width: 1140px;
+  padding: 0px 15px;
 }
 /* ============Hero============*/
 .hero {
@@ -37,32 +39,106 @@ ul {
   height: 500px;
   color: #fff;
   background-color: #ed4c5c;
+  padding: 94px 0px;
+}
+
+.hero-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 310px;
+
+  padding: 0px 15px;
+}
+
+.hero-text-content {
+  max-width: 444px;
+  float: left;
+  display: inline;
+  margin-right: 80px;
 }
 .hero-title {
+  padding-top: 35px;
+  margin-bottom: 55px;
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
 }
 
 .hero-text {
+  margin-bottom: 40px;
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
 }
+
+.hero-img-content {
+  float: right;
+  position: relative;
+  width: 585px;
+}
+.hero-img-left {
+  position: absolute;
+  top: 22px;
+  z-index: 1;
+}
+.hero-img-center {
+  position: absolute;
+  top: 0px;
+  left: 45px;
+  z-index: 3;
+}
+.hero-img-right {
+  position: absolute;
+  top: 22px;
+  right: 50px;
+  z-index: 2;
+}
+.logo-block {
+  vertical-align: middle;
+}
+.logo-block img {
+  display: inline-block;
+}
+.icon-playstore,
+.icon-appstore {
+  margin-right: 23px;
+}
+.icon-windows {
+  margin: 4px 0px;
+}
+
 /* =======Contacts============ */
+
 .contacts {
+  display: flow-root;
   height: 545px;
   background-color: #ffffff;
   color: #000;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+  padding: 117px 0px 123px 0px;
+}
+.contacts-container {
+  padding: 0px 0px 0px 25px;
+}
+.contacts-text-content {
+  float: left;
+  width: 50%;
 }
 .contacts-title {
+  margin-bottom: 85px;
   font-size: 36px;
   font-weight: 700;
 }
+.contacts-text {
+  max-width: 434px;
+}
 
+.form {
+  width: 50%;
+  float: left;
+}
 input {
   width: 540px;
   height: 60px;
@@ -71,12 +147,21 @@ input {
   border: 1px solid var(--gray-1, #333);
   color: rgba(19, 39, 67, 0.5);
   font-size: 16px;
-
   font-weight: 400;
   line-height: normal;
 }
 .small-input {
   width: 255px;
+}
+.name-input {
+  margin-right: 27px;
+}
+.phone-input {
+  margin-top: 24px;
+}
+.service-input {
+  margin-top: 24px;
+  margin-bottom: 27px;
 }
 .submit-btn {
   width: 160px;
@@ -90,13 +175,39 @@ input {
 /* ==========Footer============ */
 .foooter {
   height: 435px;
+  padding: 85px 0px;
   background-color: #fafafa;
   color: #101010;
   font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer-title {
+  margin-bottom: 28px;
   font-size: 18px;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.5;
+}
+.footer-list {
+  display: flow-root;
+}
+.footer-list li {
+  margin-bottom: 5px;
+}
+.footer-item {
+  margin-bottom: 86px;
+  width: 25%;
+  float: left;
+}
+.adress {
+  max-width: 254px;
+}
+.phone {
+  margin-top: 11px;
+  margin-bottom: 24px;
+}
+
+.logo-social img {
+  margin-right: 14px;
 }
