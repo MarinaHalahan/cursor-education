@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,17 +19,26 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <img src="./images/Logo.svg" alt="" />
+      <div class="container header-box">
+        <img src="./images/Logo.svg" alt="" class="header-logo" />
         <nav>
-          <ul>
-            <li>About</li>
-            <li>Help</li>
-            <li>Features</li>
-            <li>Signup</li>
+          <ul class="nav-list">
+            <li class="nav-item">About</li>
+            <li class="nav-item">Help</li>
+            <li class="nav-item">Features</li>
+            <li class="nav-item">Signup</li>
           </ul>
         </nav>
-        <a href="">Request Demo</a>
+        <button class="header-btn">
+          <span>Request Demo</span>
+          <img
+            src="./images/arrow.svg"
+            alt="Arrow"
+            width="20px"
+            height="14px"
+            class="arrow-header"
+          />
+        </button>
       </div>
     </header>
     <main>
@@ -102,6 +111,29 @@
               <img src="./images/arrow.svg" alt="Arrow" />
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container reviews-wrapper">
+          <h2 class="reviews-title">Testimonials</h2>
+          <div class="review-slide">
+            <img
+              src="./images/review-pic.png"
+              alt="Avatar"
+              width="132px"
+              height="90px"
+              class="review-img"
+            />
+            <div class="slide-content">
+              <h3 class="slide-titile">John Fang</h3>
+              <p class="slide-subtitile">wordfaang.com</p>
+              <p class="slide-text">
+                Suspendisse ultrices at diam lectus nullam.<br />Nisl, sagittis
+                viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                aenean nam laoreet nulla.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
