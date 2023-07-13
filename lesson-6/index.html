@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,7 +20,7 @@
   <body>
     <header class="header">
       <div class="container header-box">
-        <img src="./images/Logo.svg" alt="" class="header-logo" />
+        <img src="./images/Logo.svg" alt="Logo" class="logo" />
         <nav>
           <ul class="nav-list">
             <li class="nav-item">About</li>
@@ -29,20 +29,31 @@
             <li class="nav-item">Signup</li>
           </ul>
         </nav>
-        <button class="header-btn">
+        <button class="white-btn">
           <span>Request Demo</span>
           <img
             src="./images/arrow.svg"
             alt="Arrow"
             width="20px"
             height="14px"
-            class="arrow-header"
+            class="arrow-white-btn"
           />
         </button>
       </div>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">Save your data storage here.</h1>
+          <p class="hero-text">
+            Data Warehouse is a data storage area that has been tested for
+            security, so you can store your data here safely but not be afraid
+            of being stolen by others.
+          </p>
+          <a class="learn-btn">Learn more</a>
+          <img src="./images/hero.png" alt="" class="hero-img" />
+        </div>
+      </section>
     </header>
     <main>
-      <section class="hero"></section>
       <section class="help">
         <div class="container help-container">
           <img src="./images/help.png" alt="" class="help-img" />
@@ -125,7 +136,7 @@
               class="review-img"
             />
             <div class="slide-content">
-              <h3 class="slide-titile">John Fang</h3>
+              <h3 class="slide-title">John Fang</h3>
               <p class="slide-subtitile">wordfaang.com</p>
               <p class="slide-text">
                 Suspendisse ultrices at diam lectus nullam.<br />Nisl, sagittis
@@ -134,9 +145,105 @@
               </p>
             </div>
           </div>
+          <div class="switch-box">
+            <img
+              src="./images/slide-dots.svg"
+              alt="Slides"
+              class="slides-dots"
+            />
+            <div class="arrows">
+              <img
+                src="./images/arrow-right.svg"
+                alt="Right arrow"
+                class="arrow-right"
+              />
+              <img
+                src="./images/arrow-left.svg"
+                alt="Left arrow"
+                class="arrow-left"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="try">
+        <div class="container try-wrapper">
+          <div>
+            <h2 class="try-title">Try for free!</h2>
+            <p class="try-text">Get limited 1 week free try our features!</p>
+          </div>
+
+          <div class="buttons">
+            <a class="learn-btn try-btn">Learn more</a>
+            <button class="white-btn">
+              <span>Request Demo</span>
+              <img
+                src="./images/arrow.svg"
+                alt="Arrow"
+                width="20px"
+                height="14px"
+                class="arrow-white-btn"
+              />
+            </button>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="main-content">
+            <div class="address-data">
+              <div class="address-title">
+                <img
+                  src="./images/Logo.svg"
+                  alt="Logo"
+                  class="logo footer-logo"
+                />
+                <span class="adress-ttitle-text">DataWarehouse</span>
+              </div>
+              <address>
+                <p class="address-info">
+                  Warehouse Society, 234<br />Bahagia Ave Street PRBW 29281
+                </p>
+                <p class="address-add">
+                  info@warehouse.project<br />1-232-3434 (Main)
+                </p>
+              </address>
+            </div>
+            <div class="about">
+              <p class="about-title">About</p>
+              <ul class="about-list">
+                <li class="about-item">Profile</li>
+                <li class="about-item">Features</li>
+                <li class="about-item">Careers</li>
+                <li class="about-item">DW News</li>
+              </ul>
+            </div>
+            <div class="help-footer">
+              <p class="help-footer-title">Help</p>
+              <ul class="help-footer-list">
+                <li class="help-footer-item">Support</li>
+                <li class="help-footer-item">Sign up</li>
+                <li class="help-footer-item">Guide</li>
+                <li class="help-footer-item">Reports</li>
+                <li class="help-footer-item">Q&A</li>
+              </ul>
+            </div>
+            <div class="social-box">
+              <p class="social-footer-title">Social Media</p>
+              <img src="./images/social-icons.svg" alt="Socal media icons" />
+            </div>
+          </div>
+          <div class="additional-content">
+            <p class="copyright-text">
+              © Datawarehouse™, 2020. All rights reserved.<br />Company
+              Registration Number: 21479524.
+            </p>
+            <img src="./images/chat-icon.svg" alt="Chat" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
