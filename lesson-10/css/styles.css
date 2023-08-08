@@ -1,0 +1,92 @@
+.box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+  height: 75vh;
+  background-image: url("../images/stars-background.jpg");
+  background-size: cover;
+  position: relative;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-40%, -50%);
+}
+.sword {
+  width: 200px;
+  height: 15px;
+  border-radius: 30px;
+}
+.left {
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    #000 20%,
+    rgb(247, 119, 161) 20%,
+    rgb(247, 119, 161) 80%
+  );
+  box-shadow: 0 0 10px 5px rgba(247, 119, 161, 0.6);
+  animation: crossing 5s infinite ease-in-out;
+  transform: skew(20deg, -20deg);
+}
+.right {
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    rgb(175, 238, 238) 80%,
+    rgb(175, 238, 238) 20%,
+    #000 20%
+  );
+  box-shadow: 0 0 10px 5px rgba(175, 238, 238, 0.6);
+  /* animation: second 5s infinite ease-in-out; */
+  transform: skew(-20deg, 20deg);
+}
+
+@keyframes crossing {
+  0% {
+    top: 0;
+
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: -100px;
+    right: 0;
+
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    top: -100px;
+    right: 100px;
+  }
+  70% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes second {
+  0% {
+    top: 0;
+    left: 0;
+
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: -100px;
+    left: 0;
+
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    top: -100px;
+    left: 200px;
+  }
+  70% {
+    top: 0;
+    left: 0;
+  }
+}
